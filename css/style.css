@@ -266,3 +266,16 @@ footer {
     left: 0;
   }
 }
+
+@media (max-width: 500px) {
+  #main-text {
+    background-color: rgba(0, 0, 0, 0.35);
+    border: #00b894 solid 5px;
+    padding: 18px;
+  }
+  #main-text span {
+    background-color: transparent;
+    border: 0;
+    padding: 0;
+  }
+}
