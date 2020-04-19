@@ -1,0 +1,268 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+  background: #6c5ce7;
+  height: 5rem;
+  width: 100%;
+  z-index: 3;
+}
+
+.logo img {
+  height: 5rem;
+  width: 14rem;
+}
+
+nav ul {
+  float: right;
+  margin-right: 20px;
+}
+
+.menu {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+
+.menu a {
+  font-family: "Lexend Giga", sans-serif;
+  color: white;
+  padding: 7px 13px;
+  border-radius: 3px;
+}
+
+.menu-link:hover {
+  background: #2e2386;
+  transition: 0.5s;
+}
+
+.btn-check {
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  font-size: 30px;
+  cursor: pointer;
+  display: none;
+}
+
+#res-menu {
+  display: none;
+}
+
+.menu hr {
+  border: black solid 1.5px;
+}
+
+#template {
+  margin-top: 2rem;
+}
+
+#img-parallax {
+  background-image: url("https://ogimg.infoglobo.com.br/mundo/24365566-da9-a6c/FT1086A/652/x87814826_Nurses-and-healthcare-workers-formed-the-word-Hope-with-candles-as-they-mourn-and-remember.jpg.pagespeed.ic.VIbuLFc6v7.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  position: relative;
+  opacity: 0.9;
+  margin-top: -80px;
+  z-index: -1;
+}
+
+#main-text {
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  width: 100%;
+}
+
+#main-text span {
+  font-family: "Lexend Giga", sans-serif;
+  font-size: 25px;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.35);
+  border: #00b894 solid 5px;
+  padding: 18px;
+}
+
+#news-group {
+  position: relative;
+  width: 50%;
+  margin-bottom: 2rem;
+}
+
+#news-group_header {
+  text-align: center;
+  font-family: "Indie Flower", cursive;
+  color: #00b894;
+  margin-bottom: 1.5rem;
+}
+
+.news {
+  display: none;
+}
+
+.news img {
+  vertical-align: middle;
+  width: 100%;
+}
+
+.container-news-video {
+  display: flex;
+  justify-content: center;
+  background-color: rgba(223, 230, 233, 1);
+}
+
+.mini-news {
+  float: left;
+  width: 16.66%;
+}
+
+.mini-news img {
+  width: 100%;
+  height: 15vh;
+}
+
+.thumbnail {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.active,
+.thumbnail:hover {
+  opacity: 1;
+}
+
+.news-video {
+  vertical-align: middle;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.content-news {
+  background-color: #37a28d87;
+  color: #2d3436;
+  width: 100%;
+  padding: 1.2rem;
+  bottom: 0;
+}
+
+.content-news h1,
+.content-news p {
+  margin-bottom: 1rem;
+}
+
+.btn-video-control,
+.btn-audio-control {
+  background: rgb(29, 40, 43);
+  color: #ecf0f1;
+  padding: 0.7rem;
+  margin-top: 0.5rem;
+  width: 10rem;
+  font-size: 1.1rem;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-video-control:hover,
+.btn-audio-control:hover {
+  background: #ecf0f1;
+  color: rgb(29, 40, 43);
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #6c5ce7;
+  bottom: 0;
+  width: 100%;
+  height: 4rem;
+  font-family: "Lexend Giga", sans-serif;
+}
+
+@media (max-width: 952px) {
+  .menu a {
+    font-size: 16px;
+  }
+
+  #img-parallax {
+    margin-top: 0 !important;
+  }
+
+  #news-group {
+    width: 80% !important;
+  }
+
+  .mini-news {
+    width: 33.33% !important;
+  }
+
+  .mini-news img {
+    height: 21vh;
+  }
+}
+
+@media (max-width: 858px) {
+  .btn-check {
+    display: block;
+  }
+
+  nav {
+    top: 0px;
+    position: fixed;
+  }
+
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #2e2386;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+
+  .menu {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+
+  .menu {
+    font-size: 20px;
+  }
+
+  .menu-link:hover {
+    background: none;
+    color: #6c5ce7;
+    transition: 0.5s;
+  }
+
+  #res-menu:checked ~ ul {
+    left: 0;
+  }
+}
