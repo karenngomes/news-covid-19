@@ -1,3 +1,7 @@
+#template {
+  margin: 1rem 0 1rem 0;
+}
+
 #container {
   display: flex;
   justify-content: center;
@@ -36,10 +40,14 @@ a {
   font-size: 2.5rem;
 }
 
-#about-me p {
+#about-me-text {
   margin: 1rem 0 1rem 0;
   text-align: justify;
   font-family: "Roboto", sans-serif;
+}
+
+#about-me-text p {
+  text-indent: 2rem;
 }
 
 #social-networks-bottom {
