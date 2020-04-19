@@ -1,6 +1,6 @@
 #template-more {
   margin-top: 2rem;
-  height: 75vh;
+  min-height: 75vh;
 }
 
 .container-more {

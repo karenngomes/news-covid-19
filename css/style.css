@@ -267,6 +267,12 @@ footer {
   }
 }
 
+@media (max-width: 700px) {
+  #template-contact iframe {
+    height: 130vh;
+  }
+}
+
 @media (max-width: 500px) {
   #main-text {
     background-color: rgba(0, 0, 0, 0.35);
@@ -277,5 +283,9 @@ footer {
     background-color: transparent;
     border: 0;
     padding: 0;
+  }
+
+  #template-contact iframe {
+    height: 160vh !important;
   }
 }
