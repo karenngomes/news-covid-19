@@ -37,59 +37,56 @@
             </div>
 
             <div class="news">
-                <div class="container-news-video">
-                    <div>
-                        <video loop class="news-video">
-                            <source src="/videos/exercicios-ar-livre.mp4" type="video/mp4">
-                        </video>
-                    </div>
-                </div>
-
                 <div class="content-news">
                     <h1>Coronavírus e atividades ao ar livre: o que diz a ciência</h1>
                     <p>Estudo aerodinâmico com simulações computacionais, sobre o movimento de gotículas durante
                         atividades físicas ao ar livre, ganhou grande repercussão na internet, neste contexto de tantas
                         incertezas sobre o coronavírus. Embora não tenha conclusões epidemiológicas, virais ou médicas,
                         a pesquisa divulgada na última semana mexeu com os ânimos de muitos. (...)</p>
-                    <button class="btn-video-control" onclick="handleVideoControl(1)">Assistir</button>
                 </div>
 
+                <div class="container-news-video">
+                    <div>
+                        <iframe src="https://www.youtube.com/embed/pGQI1grO0Pk" frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
             </div>
 
             <div class="news">
-                <img src="/images/coronavirus-saude-mental.png">
-                <audio class="news-audio">
-                    <source src="https://abrilsaude.files.wordpress.com/2020/04/detetives-da-sac3bade-ep41-v2.mp3"
-                        type="audio/mpeg">
-                </audio>
-
-                <div class="content-news">
+                <div class="container-audio">
+                    <img src="/images/coronavirus-saude-mental.png">
+                    <audio controls>
+                        <source src="https://abrilsaude.files.wordpress.com/2020/04/detetives-da-sac3bade-ep41-v2.mp3"
+                            type="audio/mpeg">
+                    </audio>
+                </div>
+                <div class="content-news-audio">
                     <h1>A saúde mental durante e após a pandemia de coronavírus</h1>
                     <p>Uma pandemia como a de coronavírus chacoalha a vida de todo mundo. Isolamento social, medo,
                         incerteza com o futuro, mudança no ritmo das relações sociais. Esses e outros fatores podem
                         culminar em transtornos como depressão e ansiedade (ou mesmo em brigas, divórcios etc). Como
                         preservar a saúde mental nesses momentos críticos? (...)</p>
-                    <button class="btn-audio-control" onclick="handleAudioControl(1)">Escutar áudio</button>
                 </div>
             </div>
 
             <div class="news">
-                <div class="container-news-video">
-                    <div>
-                        <video loop class="news-video">
-                            <source src="videos/voluntarios-bh.mp4" type="video/mp4">
-                        </video>
-                    </div>
-                </div>
-
                 <div class="content-news">
                     <h1>Voluntários entregam cestas básicas em comunidades de BH</h1>
                     <p>Incomodados com a situação crítica em que muitas famílias carentes se encontram por causa do
                         coronavírus, um grupo de amigos se uniu para arrecadar fundos e destinar o dinheiro a cestas
                         básicas para doações na Grande Belo Horizonte. Além das comunidades, a entrega ocorre também
                         para quilombolas, indígenas, refugiados, pessoas em situação de rua, entre outros. (...)</p>
-                    <button class="btn-video-control" onclick="handleVideoControl(2)">Assistir</button>
                 </div>
+                <div class="container-news-video">
+                    <div>
+                        <iframe src="https://www.youtube.com/embed/VKoE0erdsZ8" frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+
             </div>
 
             <div class="news">
@@ -106,50 +103,22 @@
             </div>
 
             <div class="news">
-                <img
-                    src="https://www.itforum365.com.br/wp-content/uploads/2020/03/podcast-especial-coronavirus-768x432.jpg">
-                <audio class="news-audio">
-                    <source
-                        src="https://d3ctxlq1ktw2nl.cloudfront.net/staging/2020-2-25/59021300-44100-2-64ba8ca9c4cda.m4a"
-                        type="audio/mpeg">
-                </audio>
-
-                <div class="content-news">
+                <div class="content-news-audio">
                     <h1>Podcast coronavírus: como o setor de tecnologia é afetado?</h1>
                     <p>Para além dos impactos na saúde, o novo coronavírus tem afetado uma série de setores da economia
                         e no setor de tecnologia não é diferente. No "Entre Tech", podcast da IT Mídia, abordamos os
                         reflexos da covid-19 no setor e como o mesmo tem reagido. (...)</p>
-                    <button class="btn-audio-control" onclick="handleAudioControl(2)">Escutar áudio</button>
                 </div>
-            </div>
+                <div class="container-audio">
+                    <img style="width: 100%;height: 35vh;"
+                        src="https://www.itforum365.com.br/wp-content/uploads/2020/03/podcast-especial-coronavirus-768x432.jpg">
+                    <audio controls>
+                        <source
+                            src="https://d3ctxlq1ktw2nl.cloudfront.net/staging/2020-2-25/59021300-44100-2-64ba8ca9c4cda.m4a"
+                            type="audio/mpeg">
+                    </audio>
+                </div>
 
-            <div class="thumbnails">
-                <div class="mini-news">
-                    <img class="thumbnail"
-                        src="https://mediastorage.cnnbrasil.com.br/IMAGES/00/00/00/3253_07988AC4DB7F4968.jpg"
-                        onclick="currentSlide(1)" alt="Mulher segurando seu bebê">
-                </div>
-                <div class="mini-news">
-                    <img class="thumbnail" src="https://i.ytimg.com/vi/pGQI1grO0Pk/hqdefault.jpg"
-                        onclick="currentSlide(2)" alt="Vídeo sobre atividades durante a pandemia">
-                </div>
-                <div class="mini-news">
-                    <img class="thumbnail" src="/images/coronavirus-saude-mental.png" onclick="currentSlide(3)"
-                        alt="Saúde mental durante e após a pandemia de coronavírus">
-                </div>
-                <div class="mini-news">
-                    <img class="thumbnail" src="https://i.ytimg.com/vi/VKoE0erdsZ8/hqdefault.jpg"
-                        onclick="currentSlide(4)" alt="Voluntários retirando cestas de um caminhão">
-                </div>
-                <div class="mini-news">
-                    <img class="thumbnail" src="images/detalhes-7-vacinas.jpg" onclick="currentSlide(5)"
-                        alt="Cientistas observando o vírus">
-                </div>
-                <div class="mini-news">
-                    <img class="thumbnail"
-                        src="https://www.itforum365.com.br/wp-content/uploads/2020/03/podcast-especial-coronavirus-768x432.jpg"
-                        onclick="currentSlide(6)" alt="Pintura de pessoas usando máscara">
-                </div>
             </div>
         </div>
     </div>
@@ -157,7 +126,6 @@
     <script src="js/footer.js"></script>
 
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
-    <script src="js/script.js"></script>
 </body>
 
 </html>
