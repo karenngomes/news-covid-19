@@ -1,0 +1,45 @@
+#container {
+  display: flex;
+  justify-content: center;
+  height: 90vh;
+}
+
+a {
+  text-decoration: none;
+  color: #00b894;
+}
+
+#container-img {
+  width: 32%;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+#container img {
+  width: 80%;
+  height: 58%;
+  border: 5px solid #00b894;
+  border-radius: 100%;
+}
+
+#about-me {
+  width: 40%;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#about-me p {
+  margin: 1rem 0 1rem 0;
+  text-align: justify;
+}
+
+#social-networks a:not(:last-child) {
+  margin-right: 0.5rem;
+}
+
+#social-networks i {
+  font-size: 1.5rem;
+}
