@@ -1,0 +1,26 @@
+#template {
+  height: 75vh;
+}
+
+.container-more {
+  margin: 2rem;
+}
+
+.container-more h3 {
+  color: #00b894;
+  margin-bottom: 1rem;
+}
+
+.container-more li {
+  list-style: inside;
+  list-style-type: decimal;
+  margin-bottom: 0.7rem;
+}
+
+.container-more a {
+  color: black;
+}
+
+.container-more a:hover {
+  text-decoration: underline;
+}
