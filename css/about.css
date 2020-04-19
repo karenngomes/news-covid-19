@@ -13,6 +13,7 @@ a {
   width: 32%;
   justify-content: center;
   display: flex;
+  flex-direction: column;
   align-items: center;
 }
 
@@ -31,10 +32,22 @@ a {
   align-items: center;
 }
 
+#about-me h2 {
+  font-size: 2.5rem;
+}
+
 #about-me p {
   margin: 1rem 0 1rem 0;
   text-align: justify;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
+}
+
+#social-networks-bottom {
+  display: none;
+}
+
+#social-networks {
+  margin-top: 1.5rem;
 }
 
 #social-networks a:not(:last-child) {
@@ -43,4 +56,37 @@ a {
 
 #social-networks i {
   font-size: 1.5rem;
+}
+
+@media (max-width: 952px) {
+  #container {
+    display: block;
+    margin: 7rem 2rem 2rem 2rem;
+    height: auto;
+  }
+
+  #container-img,
+  #about-me {
+    width: auto;
+  }
+
+  #about-me {
+    margin-top: 2rem;
+  }
+
+  #social-networks {
+    display: none;
+  }
+
+  #social-networks-bottom {
+    display: block;
+  }
+
+  #social-networks-bottom a:not(:last-child) {
+    margin-right: 0.5rem;
+  }
+
+  #social-networks-bottom i {
+    font-size: 2.5rem;
+  }
 }

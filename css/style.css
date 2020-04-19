@@ -70,7 +70,8 @@ nav ul {
   border: black solid 1.5px;
 }
 
-#template {
+#template,
+#template-contact {
   margin-top: 2rem;
 }
 
@@ -141,7 +142,7 @@ nav ul {
   min-height: 100%;
 }
 
-iframe {
+.container-news-video iframe {
   width: 39.5vw;
   height: 100%;
 }
@@ -202,6 +203,25 @@ footer {
 
   #news-group {
     width: 80% !important;
+  }
+
+  .news {
+    display: block;
+  }
+
+  .news img,
+  .container-audio,
+  .content-news-audio {
+    width: 100%;
+  }
+
+  .container-news-video iframe {
+    width: 78vw;
+    height: 49vh;
+  }
+
+  #template-contact {
+    margin-top: 7rem;
   }
 }
 
